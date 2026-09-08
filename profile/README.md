@@ -131,7 +131,7 @@ Open `http://127.0.0.1:8080` (or `http://<your-server-ip>:8080`) — default cre
 |---|---|---|
 | Core Project | Main application codebase and issues | [FilebrowserNext/filebrowserNEXT](https://github.com/FilebrowserNext/filebrowserNEXT) |
 | Installer Script | Automated installation scripts (`get.sh`, `get.ps1`) | [FilebrowserNext/get](https://github.com/FilebrowserNext/get) |
-| Homebrew Tap | Formula for macOS and Linuxbrew users | [FilebrowserNext/homebrew-tap](https://github.com/FilebrowserNext/homebrew-tap) |
+| Homebrew Tap | Formula for macOS users | [FilebrowserNext/homebrew-tap](https://github.com/FilebrowserNext/homebrew-tap) |
 | Docker Image | Multi-arch container image on GHCR | [ghcr.io/filebrowsernext/filebrowsernext](https://github.com/orgs/FilebrowserNext/packages/container/package/filebrowsernext) |
 | Documentation | Live documentation and deployment guide | [filebrowsernext.github.io/filebrowserNEXT](https://filebrowsernext.github.io/filebrowserNEXT/) |
 | Releases | Prebuilt binaries for Linux, macOS, and Windows | [Releases](https://github.com/FilebrowserNext/filebrowserNEXT/releases) |
