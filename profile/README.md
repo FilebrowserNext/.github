@@ -10,9 +10,11 @@
 
 <p align="center">
   <a href="https://filebrowsernext.github.io/filebrowserNEXT/"><img src="https://img.shields.io/badge/Documentation-GitHub_Pages-6366f1?style=flat-square&logo=gitbook&logoColor=white" alt="Documentation"/></a>
+  <a href="https://github.com/FilebrowserNext/filebrowserNEXT/releases/latest"><img src="https://img.shields.io/badge/Release-v3.0.0--next-22c55e?style=flat-square" alt="Latest Release"/></a>
+  <a href="https://github.com/orgs/FilebrowserNext/packages/container/package/filebrowsernext"><img src="https://img.shields.io/badge/Docker-GHCR-0ea5e9?style=flat-square&logo=docker&logoColor=white" alt="Docker"/></a>
+  <a href="https://github.com/FilebrowserNext/get"><img src="https://img.shields.io/badge/Installer-get.sh-8b5cf6?style=flat-square" alt="Installer"/></a>
   <a href="https://github.com/FilebrowserNext/filebrowserNEXT"><img src="https://img.shields.io/badge/Main_Project-filebrowserNEXT-0ea5e9?style=flat-square&logo=github&logoColor=white" alt="Main Project"/></a>
   <a href="https://github.com/FilebrowserNext/filebrowserNEXT/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-22c55e?style=flat-square" alt="License"/></a>
-  <img src="https://img.shields.io/badge/Status-Active-22c55e?style=flat-square" alt="Status"/>
 </p>
 
 <p align="center">
@@ -21,11 +23,9 @@
   </a>
 </p>
 
-
 ---
 
 ## What We Build
-
 
 **FilebrowserNext** is an open-source organization dedicated to maintaining and evolving a modern, secure, self-hosted web file manager.
 
@@ -70,33 +70,49 @@ All of these are resolved in File Browser Next, with full unit test coverage.
 
 ## Quick Start
 
+### 1. Automated 1-Liner Install (Linux & macOS)
+
 ```bash
-# Build from source
+curl -fsSL https://raw.githubusercontent.com/FilebrowserNext/get/main/get.sh | bash
+filebrowser -r /path/to/your/files
+```
+
+### 2. Docker Run
+
+```bash
+docker run -d \
+  --name filebrowser \
+  --restart unless-stopped \
+  -p 8080:80 \
+  -v /path/to/your/files:/srv \
+  -v /path/to/database:/database \
+  ghcr.io/filebrowsernext/filebrowsernext:latest
+```
+
+### 3. Build from Source
+
+```bash
 git clone https://github.com/FilebrowserNext/filebrowserNEXT.git
 cd filebrowserNEXT
-
-# Build the frontend
 pnpm --dir frontend install && pnpm --dir frontend build
-
-# Build and run the binary
 go build -o filebrowser .
 ./filebrowser -r /path/to/your/files
 ```
 
 Open `http://127.0.0.1:8080` (or `http://<your-server-ip>:8080`) — default credentials: `admin` / `admin`.
 
-
 ---
 
-## Links
+## Repositories & Links
 
-| | |
-|---|---|
-| Main repository | [FilebrowserNext/filebrowserNEXT](https://github.com/FilebrowserNext/filebrowserNEXT) |
-| Documentation | [filebrowsernext.github.io/filebrowserNEXT](https://filebrowsernext.github.io/filebrowserNEXT/) |
-| Security policy | [SECURITY.md](https://github.com/FilebrowserNext/filebrowserNEXT/blob/main/docs/security.md) |
-| Changelog | [CHANGELOG.md](https://github.com/FilebrowserNext/filebrowserNEXT/blob/main/docs/changelog.md) |
-| License | [Apache 2.0](https://github.com/FilebrowserNext/filebrowserNEXT/blob/main/LICENSE) |
+| Project | Description | Link |
+|---|---|---|
+| Core Project | Main application codebase and issues | [FilebrowserNext/filebrowserNEXT](https://github.com/FilebrowserNext/filebrowserNEXT) |
+| Installer Script | Automated installation scripts (`get.sh`, `get.ps1`) | [FilebrowserNext/get](https://github.com/FilebrowserNext/get) |
+| Docker Image | Multi-arch container image on GHCR | [ghcr.io/filebrowsernext/filebrowsernext](https://github.com/orgs/FilebrowserNext/packages/container/package/filebrowsernext) |
+| Documentation | Live documentation and deployment guide | [filebrowsernext.github.io/filebrowserNEXT](https://filebrowsernext.github.io/filebrowserNEXT/) |
+| Releases | Prebuilt binaries for Linux, macOS, and Windows | [Releases](https://github.com/FilebrowserNext/filebrowserNEXT/releases) |
+| Security Policy | Security disclosures and vulnerability reporting | [SECURITY.md](https://github.com/FilebrowserNext/filebrowserNEXT/blob/main/docs/security.md) |
 
 ---
 
