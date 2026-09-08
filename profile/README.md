@@ -15,9 +15,16 @@
   <img src="https://img.shields.io/badge/Status-Active-22c55e?style=flat-square" alt="Status"/>
 </p>
 
+<p align="center">
+  <a href="https://github.com/FilebrowserNext/filebrowserNEXT">
+    <img src="https://raw.githubusercontent.com/FilebrowserNext/.github/main/profile/demo.gif" width="100%" alt="File Browser Next Live Interactive Demo" style="border-radius: 12px; box-shadow: 0 16px 36px rgba(0,0,0,0.3);" />
+  </a>
+</p>
+
 ---
 
 ## What We Build
+
 
 **FilebrowserNext** is an open-source organization dedicated to maintaining and evolving a modern, secure, self-hosted web file manager.
 
