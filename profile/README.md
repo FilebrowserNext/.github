@@ -70,14 +70,21 @@ All of these are resolved in File Browser Next, with full unit test coverage.
 
 ## Quick Start
 
-### 1. Automated 1-Liner Install (Linux & macOS)
+### 1. Automated 1-Liner Install
 
+**Linux & macOS:**
 ```bash
 curl -fsSL https://raw.githubusercontent.com/FilebrowserNext/get/main/get.sh | bash
 filebrowser -r /path/to/your/files
 ```
 
-### 2. Docker Run
+**Windows (PowerShell as Admin):**
+```powershell
+iwr -useb https://raw.githubusercontent.com/FilebrowserNext/get/main/get.ps1 | iex
+filebrowser -r C:\path\to\your\files
+```
+
+### 2. Docker Run (Instant Background Deployment)
 
 ```bash
 docker run -d \
@@ -89,7 +96,21 @@ docker run -d \
   ghcr.io/filebrowsernext/filebrowsernext:latest
 ```
 
-### 3. Build from Source
+### 3. Running in the Background (Without Docker)
+
+* **Linux & macOS (Nohup):**
+  ```bash
+  nohup filebrowser -r /path/to/your/files > filebrowser.log 2>&1 &
+  ```
+  *Stop with:* `pkill filebrowser`
+
+* **Windows (Silent Background):**
+  ```powershell
+  Start-Process filebrowser -ArgumentList "-r C:\path\to\your\files" -WindowStyle Hidden
+  ```
+  *Stop with:* `Stop-Process -Name filebrowser`
+
+### 4. Build from Source
 
 ```bash
 git clone https://github.com/FilebrowserNext/filebrowserNEXT.git
