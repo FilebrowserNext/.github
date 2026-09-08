@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/FilebrowserNext/filebrowserNEXT/main/frontend/public/img/logo.svg" width="100" height="100" alt="File Browser Next Logo" />
+  <img src="https://raw.githubusercontent.com/FilebrowserNext/filebrowserNEXT/main/frontend/public/img/logo.svg" width="64" height="64" alt="File Browser Next Logo" />
 </p>
 
-<h1 align="center">FilebrowserNext</h1>
+<h1 align="center" style="margin-top: 4px; margin-bottom: 4px;">FilebrowserNext</h1>
 
-<p align="center">
+<p align="center" style="margin-top: 0; margin-bottom: 12px;">
   <b>Building the next generation of open-source, self-hosted file management.</b>
 </p>
 
@@ -17,9 +17,10 @@
 
 <p align="center">
   <a href="https://github.com/FilebrowserNext/filebrowserNEXT">
-    <img src="https://raw.githubusercontent.com/FilebrowserNext/.github/main/profile/demo.gif" width="100%" alt="File Browser Next Live Interactive Demo" style="border-radius: 12px; box-shadow: 0 16px 36px rgba(0,0,0,0.3);" />
+    <img src="https://raw.githubusercontent.com/FilebrowserNext/.github/main/profile/demo.gif" width="680" alt="File Browser Next Live Interactive Demo" style="border-radius: 10px; box-shadow: 0 12px 30px rgba(0,0,0,0.25);" />
   </a>
 </p>
+
 
 ---
 
