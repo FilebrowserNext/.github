@@ -83,7 +83,8 @@ go build -o filebrowser .
 ./filebrowser -r /path/to/your/files
 ```
 
-Open `http://localhost:8080` — default credentials: `admin` / `admin`.
+Open `http://127.0.0.1:8080` (or `http://<your-server-ip>:8080`) — default credentials: `admin` / `admin`.
+
 
 ---
 
