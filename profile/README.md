@@ -13,6 +13,7 @@
   <a href="https://github.com/FilebrowserNext/filebrowserNEXT/releases/latest"><img src="https://img.shields.io/badge/Release-v3.0.0--next-22c55e?style=flat-square" alt="Latest Release"/></a>
   <a href="https://github.com/orgs/FilebrowserNext/packages/container/package/filebrowsernext"><img src="https://img.shields.io/badge/Docker-GHCR-0ea5e9?style=flat-square&logo=docker&logoColor=white" alt="Docker"/></a>
   <a href="https://github.com/FilebrowserNext/get"><img src="https://img.shields.io/badge/Installer-get.sh-8b5cf6?style=flat-square" alt="Installer"/></a>
+  <a href="https://github.com/FilebrowserNext/homebrew-tap"><img src="https://img.shields.io/badge/Homebrew-Tap-f97316?style=flat-square&logo=homebrew&logoColor=white" alt="Homebrew Tap"/></a>
   <a href="https://github.com/FilebrowserNext/filebrowserNEXT"><img src="https://img.shields.io/badge/Main_Project-filebrowserNEXT-0ea5e9?style=flat-square&logo=github&logoColor=white" alt="Main Project"/></a>
   <a href="https://github.com/FilebrowserNext/filebrowserNEXT/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-22c55e?style=flat-square" alt="License"/></a>
 </p>
@@ -130,6 +131,7 @@ Open `http://127.0.0.1:8080` (or `http://<your-server-ip>:8080`) — default cre
 |---|---|---|
 | Core Project | Main application codebase and issues | [FilebrowserNext/filebrowserNEXT](https://github.com/FilebrowserNext/filebrowserNEXT) |
 | Installer Script | Automated installation scripts (`get.sh`, `get.ps1`) | [FilebrowserNext/get](https://github.com/FilebrowserNext/get) |
+| Homebrew Tap | Formula for macOS and Linuxbrew users | [FilebrowserNext/homebrew-tap](https://github.com/FilebrowserNext/homebrew-tap) |
 | Docker Image | Multi-arch container image on GHCR | [ghcr.io/filebrowsernext/filebrowsernext](https://github.com/orgs/FilebrowserNext/packages/container/package/filebrowsernext) |
 | Documentation | Live documentation and deployment guide | [filebrowsernext.github.io/filebrowserNEXT](https://filebrowsernext.github.io/filebrowserNEXT/) |
 | Releases | Prebuilt binaries for Linux, macOS, and Windows | [Releases](https://github.com/FilebrowserNext/filebrowserNEXT/releases) |
