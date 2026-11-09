@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://filebrowsernext.github.io/filebrowserNEXT/"><img src="https://img.shields.io/badge/Documentation-GitHub_Pages-6366f1?style=flat-square&logo=gitbook&logoColor=white" alt="Documentation"/></a>
-  <a href="https://github.com/FilebrowserNext/filebrowserNEXT/releases/latest"><img src="https://img.shields.io/badge/Release-v3.0.0--next-22c55e?style=flat-square" alt="Latest Release"/></a>
+  <a href="https://github.com/FilebrowserNext/filebrowserNEXT/releases/latest"><img src="https://img.shields.io/badge/Release-v3.0.1--next-22c55e?style=flat-square" alt="Latest Release"/></a>
   <a href="https://github.com/orgs/FilebrowserNext/packages/container/package/filebrowsernext"><img src="https://img.shields.io/badge/Docker-GHCR-0ea5e9?style=flat-square&logo=docker&logoColor=white" alt="Docker"/></a>
   <a href="https://github.com/FilebrowserNext/get"><img src="https://img.shields.io/badge/Installer-get.sh-8b5cf6?style=flat-square" alt="Installer"/></a>
   <a href="https://github.com/FilebrowserNext/homebrew-tap"><img src="https://img.shields.io/badge/Homebrew-Tap-f97316?style=flat-square&logo=homebrew&logoColor=white" alt="Homebrew Tap"/></a>
