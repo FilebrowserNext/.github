@@ -44,6 +44,8 @@ File Browser Next lets you manage files directly from your browser — upload, d
 
 | Feature | File Browser Next | Original File Browser |
 |---|---|---|
+| Two-factor authentication (TOTP) | Yes | No |
+| Passkey authentication (WebAuthn) | Yes | No |
 | Server-side JWT revocation | Yes | No |
 | Session invalidation on permission change | Yes | No |
 | Brute force protection on login | Yes | No |
@@ -58,8 +60,10 @@ File Browser Next lets you manage files directly from your browser — upload, d
 
 ## Security First
 
-Security was the primary motivation for this fork. The original project had several open issues that were never resolved:
+Security was the primary motivation for this fork. The original project had several open issues and lacked modern authentication mechanisms:
 
+- **Two-factor authentication (TOTP)** — encrypted TOTP secrets with RFC 6238 compatibility
+- **WebAuthn passkeys** — hardware-backed passwordless and phishing-resistant authentication
 - **No server-side token revocation** — logging out did not actually invalidate the JWT ([#5216](https://github.com/filebrowser/filebrowser/issues/5216))
 - **Command injection vulnerability** — shell metacharacters were not filtered ([#5199](https://github.com/filebrowser/filebrowser/issues/5199))
 - **No brute force protection** — the login endpoint had no rate limiting
