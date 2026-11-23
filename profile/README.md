@@ -65,7 +65,7 @@ Security was the primary motivation for this fork. The original project had seve
 
 - **Two-factor authentication (TOTP)** — encrypted TOTP secrets with RFC 6238 compatibility
 - **WebAuthn passkeys** — hardware-backed passwordless and phishing-resistant authentication
-- **Self-hosted ALTCHA captcha** — privacy-first proof-of-work protection for login and signup, replacing Google reCAPTCHA: no third-party request, no cookie
+- **Self-hosted ALTCHA captcha** — privacy-first proof-of-work protection for login and signup, replacing Google reCAPTCHA: no third-party request, no cookie. Disabled by default and meant for public instances served over HTTPS; leave it off on a private instance reached over plain HTTP
 - **No server-side token revocation** — logging out did not actually invalidate the JWT ([#5216](https://github.com/filebrowser/filebrowser/issues/5216))
 - **Command injection vulnerability** — shell metacharacters were not filtered ([#5199](https://github.com/filebrowser/filebrowser/issues/5199))
 - **No brute force protection** — the login endpoint had no rate limiting
